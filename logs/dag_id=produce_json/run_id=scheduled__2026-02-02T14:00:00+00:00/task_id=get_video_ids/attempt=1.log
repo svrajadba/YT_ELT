@@ -1,0 +1,17 @@
+[2026-02-03T16:16:47.363+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-03T16:16:47.420+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: produce_json.get_video_ids scheduled__2026-02-02T14:00:00+00:00 [queued]>
+[2026-02-03T16:16:47.435+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: produce_json.get_video_ids scheduled__2026-02-02T14:00:00+00:00 [queued]>
+[2026-02-03T16:16:47.435+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-03T16:16:47.465+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): get_video_ids> on 2026-02-02 14:00:00+00:00
+[2026-02-03T16:16:47.477+0000] {standard_task_runner.py:63} INFO - Started process 922 to run task
+[2026-02-03T16:16:47.497+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'produce_json', 'get_video_ids', 'scheduled__2026-02-02T14:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmph_f3zsil']
+[2026-02-03T16:16:47.522+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask get_video_ids
+[2026-02-03T16:16:48.549+0000] {task_command.py:426} INFO - Running <TaskInstance: produce_json.get_video_ids scheduled__2026-02-02T14:00:00+00:00 [running]> on host a9a9531a1f20
+[2026-02-03T16:16:49.587+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='data@engineers.com' AIRFLOW_CTX_DAG_OWNER='dataengineers' AIRFLOW_CTX_DAG_ID='produce_json' AIRFLOW_CTX_TASK_ID='get_video_ids' AIRFLOW_CTX_EXECUTION_DATE='2026-02-02T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-02T14:00:00+00:00'
+[2026-02-03T16:16:49.588+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-03T16:16:50.082+0000] {python.py:237} INFO - Done. Returned value was: ['_sBRk9ADpK8', 'kNLr-cduzuo', 'pAnGwRiQ4-4', '0IJulOmiz28', 'wSh8fAFWEWs', '3GNyw4uaAqU', 'ywIcdSNJolo', 'QJI0an6irrA', 'mktYW177p6U', '7aE4EhHXzlA', 'IJkB-oapuks', 'ZFoNBxpXen4', 'RB71Z-vVvCc', 'fO5FwBcCJBY', 'U-x6KxH1kB4', '8bMh8azh3CY', 'SE9xF1l3ZwE', 'rF00lQ_upzg', 'uZY9xr-QAk0', 'AWBsoArakNY', 'Ah_uuTwGOYU', 'HISfrcjiNPM', 'WROMyJAJmp4', 'tAwzBYE18Us', 'LyFMbY-c_Lc', '3RmOvxilbPM', 'R7MkZL5i3FQ', '26QQE7EsnLA', 'PryTbmudhS8', 'Oo9EbArcQ1c', 'yWEUL3crU_E', 'JgJrQnDIRgg', 'gtkqnhN0VkU', 'oBXSvS2QKxU', 'UTdcX1e0cMA', 'oiZvK6MY7tI', 'F0OkwXKcPSE', '686PL7rt654', 'zo7i8VTpfNM', 'NfhuGUyWYfQ', 'wIpWCJKfRXs', '9Xeepzg1B8I', '50G0kIty7Cg', '4l97aNza_Zc', '3ih2bPKSWsQ', 'uA9Zcg3vHvo', '_AbFXuGDRTs', 'MOGW3v3pJ5Y', 'XNtTO_339kU', 'rB9NynBZ4go']
+[2026-02-03T16:16:50.084+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-03T16:16:50.134+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=produce_json, task_id=get_video_ids, run_id=scheduled__2026-02-02T14:00:00+00:00, execution_date=20260202T140000, start_date=20260203T161647, end_date=20260203T161650
+[2026-02-03T16:16:50.211+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-02-03T16:16:50.340+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-02-03T16:16:50.466+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
