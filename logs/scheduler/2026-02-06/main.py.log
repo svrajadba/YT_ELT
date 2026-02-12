@@ -1,0 +1,91 @@
+[2026-02-06T08:56:58.058+0000] {processor.py:161} INFO - Started process (PID=2389) to work on /opt/airflow/dags/main.py
+[2026-02-06T08:56:58.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T08:56:58.064+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:56:58.063+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T08:56:58.838+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T08:56:59.155+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:56:59.154+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T08:56:59.381+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:56:59.380+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T08:56:59.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 1.551 seconds
+[2026-02-06T08:57:30.377+0000] {processor.py:161} INFO - Started process (PID=2396) to work on /opt/airflow/dags/main.py
+[2026-02-06T08:57:30.385+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T08:57:30.403+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:57:30.402+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T08:57:30.681+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T08:57:31.398+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:57:31.397+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T08:57:31.672+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:57:31.670+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T08:57:31.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 1.665 seconds
+[2026-02-06T08:58:02.137+0000] {processor.py:161} INFO - Started process (PID=2403) to work on /opt/airflow/dags/main.py
+[2026-02-06T08:58:02.202+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T08:58:02.215+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:58:02.213+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T08:58:02.471+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T08:58:02.806+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:58:02.805+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T08:58:03.207+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:58:03.195+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T08:58:03.523+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 1.408 seconds
+[2026-02-06T08:58:34.797+0000] {processor.py:161} INFO - Started process (PID=2411) to work on /opt/airflow/dags/main.py
+[2026-02-06T08:58:34.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T08:58:34.808+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:58:34.805+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T08:58:34.997+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T08:58:35.176+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:58:35.175+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T08:58:35.287+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:58:35.286+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T08:58:35.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.627 seconds
+[2026-02-06T08:59:06.041+0000] {processor.py:161} INFO - Started process (PID=2418) to work on /opt/airflow/dags/main.py
+[2026-02-06T08:59:06.047+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T08:59:06.053+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:59:06.050+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T08:59:06.146+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T08:59:06.297+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:59:06.296+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T08:59:06.376+0000] {logging_mixin.py:188} INFO - [2026-02-06T08:59:06.375+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T08:59:06.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.439 seconds
+[2026-02-06T09:27:15.519+0000] {processor.py:161} INFO - Started process (PID=2428) to work on /opt/airflow/dags/main.py
+[2026-02-06T09:27:15.548+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T09:27:15.550+0000] {logging_mixin.py:188} INFO - [2026-02-06T09:27:15.550+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T09:27:15.673+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T09:27:15.830+0000] {logging_mixin.py:188} INFO - [2026-02-06T09:27:15.829+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T09:27:15.867+0000] {logging_mixin.py:188} INFO - [2026-02-06T09:27:15.867+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T09:27:15.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.457 seconds
+[2026-02-06T09:27:46.528+0000] {processor.py:161} INFO - Started process (PID=2441) to work on /opt/airflow/dags/main.py
+[2026-02-06T09:27:46.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T09:27:46.537+0000] {logging_mixin.py:188} INFO - [2026-02-06T09:27:46.535+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T09:27:46.605+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T09:27:46.697+0000] {logging_mixin.py:188} INFO - [2026-02-06T09:27:46.696+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T09:27:46.737+0000] {logging_mixin.py:188} INFO - [2026-02-06T09:27:46.737+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T09:27:46.767+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.257 seconds
+[2026-02-06T12:28:07.608+0000] {processor.py:161} INFO - Started process (PID=2442) to work on /opt/airflow/dags/main.py
+[2026-02-06T12:28:07.708+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T12:28:07.710+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:28:07.709+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T12:28:07.850+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T12:28:08.418+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:28:08.418+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T12:28:08.578+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:28:08.578+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T12:28:08.714+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 1.175 seconds
+[2026-02-06T12:28:09.770+0000] {processor.py:161} INFO - Started process (PID=2450) to work on /opt/airflow/dags/main.py
+[2026-02-06T12:28:09.772+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T12:28:09.774+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:28:09.773+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T12:28:09.851+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T12:28:09.918+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:28:09.918+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T12:28:09.968+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:28:09.968+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T12:28:10.011+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.258 seconds
+[2026-02-06T12:28:40.924+0000] {processor.py:161} INFO - Started process (PID=2457) to work on /opt/airflow/dags/main.py
+[2026-02-06T12:28:40.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T12:28:40.946+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:28:40.946+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T12:28:41.068+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T12:28:41.118+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:28:41.118+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T12:28:41.164+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:28:41.163+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T12:28:41.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.315 seconds
+[2026-02-06T12:29:11.611+0000] {processor.py:161} INFO - Started process (PID=2464) to work on /opt/airflow/dags/main.py
+[2026-02-06T12:29:11.614+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T12:29:11.615+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:29:11.615+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T12:29:11.657+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T12:29:11.719+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:29:11.719+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T12:29:11.757+0000] {logging_mixin.py:188} INFO - [2026-02-06T12:29:11.757+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-05 14:00:00+00:00, run_after=2026-02-06 14:00:00+00:00
+[2026-02-06T12:29:11.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.207 seconds
+[2026-02-06T14:57:14.997+0000] {processor.py:161} INFO - Started process (PID=2465) to work on /opt/airflow/dags/main.py
+[2026-02-06T14:57:15.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T14:57:15.008+0000] {logging_mixin.py:188} INFO - [2026-02-06T14:57:15.007+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T14:57:15.101+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T14:57:15.289+0000] {logging_mixin.py:188} INFO - [2026-02-06T14:57:15.285+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T14:57:15.483+0000] {logging_mixin.py:188} INFO - [2026-02-06T14:57:15.482+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-06 14:00:00+00:00, run_after=2026-02-07 14:00:00+00:00
+[2026-02-06T14:57:16.040+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 1.149 seconds
+[2026-02-06T14:57:46.630+0000] {processor.py:161} INFO - Started process (PID=2478) to work on /opt/airflow/dags/main.py
+[2026-02-06T14:57:46.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-02-06T14:57:46.635+0000] {logging_mixin.py:188} INFO - [2026-02-06T14:57:46.635+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-02-06T14:57:46.675+0000] {processor.py:840} INFO - DAG(s) 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-02-06T14:57:46.737+0000] {logging_mixin.py:188} INFO - [2026-02-06T14:57:46.736+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-06T14:57:46.778+0000] {logging_mixin.py:188} INFO - [2026-02-06T14:57:46.778+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-02-06 14:00:00+00:00, run_after=2026-02-07 14:00:00+00:00
+[2026-02-06T14:57:46.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.206 seconds
