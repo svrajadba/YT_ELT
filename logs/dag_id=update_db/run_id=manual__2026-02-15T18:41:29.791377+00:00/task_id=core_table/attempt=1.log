@@ -1,0 +1,53 @@
+[2026-02-15T18:41:34.418+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-15T18:41:34.462+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_db.core_table manual__2026-02-15T18:41:29.791377+00:00 [queued]>
+[2026-02-15T18:41:34.475+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_db.core_table manual__2026-02-15T18:41:29.791377+00:00 [queued]>
+[2026-02-15T18:41:34.476+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-15T18:41:34.497+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): core_table> on 2026-02-15 18:41:29.791377+00:00
+[2026-02-15T18:41:34.511+0000] {standard_task_runner.py:63} INFO - Started process 4210 to run task
+[2026-02-15T18:41:34.520+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'update_db', 'core_table', 'manual__2026-02-15T18:41:29.791377+00:00', '--job-id', '82', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmplgz0_kr6']
+[2026-02-15T18:41:34.524+0000] {standard_task_runner.py:91} INFO - Job 82: Subtask core_table
+[2026-02-15T18:41:34.685+0000] {task_command.py:426} INFO - Running <TaskInstance: update_db.core_table manual__2026-02-15T18:41:29.791377+00:00 [running]> on host a9a9531a1f20
+[2026-02-15T18:41:34.853+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='data@engineers.com' AIRFLOW_CTX_DAG_OWNER='dataengineers' AIRFLOW_CTX_DAG_ID='update_db' AIRFLOW_CTX_TASK_ID='core_table' AIRFLOW_CTX_EXECUTION_DATE='2026-02-15T18:41:29.791377+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-15T18:41:29.791377+00:00'
+[2026-02-15T18:41:34.859+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-15T18:41:34.880+0000] {base.py:84} INFO - Using connection ID 'postgres_db_yt_elt' for task execution.
+[2026-02-15T18:41:34.899+0000] {base.py:84} INFO - Using connection ID 'postgres_db_yt_elt' for task execution.
+[2026-02-15T18:41:34.912+0000] {base.py:84} INFO - Using connection ID 'postgres_db_yt_elt' for task execution.
+[2026-02-15T18:41:34.930+0000] {dwh.py:85} ERROR - An error occured during the update of core table: 'function' object is not subscriptable
+[2026-02-15T18:41:34.931+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-15T18:41:34.934+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/datawarehouse/data_modification.py", line 18, in insert_rows
+    cur.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/extras.py", line 236, in execute
+    return super().execute(query, vars)
+TypeError: 'function' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/datawarehouse/dwh.py", line 86, in core_table
+    raise e
+  File "/opt/airflow/dags/datawarehouse/dwh.py", line 68, in core_table
+    insert_rows(cur,conn,schema,transform_data)
+  File "/opt/airflow/dags/datawarehouse/data_modification.py", line 27, in insert_rows
+    logger.error(f"Error inserting row with Video_ID: {row[video_id]}")
+TypeError: 'function' object is not subscriptable
+[2026-02-15T18:41:34.958+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=update_db, task_id=core_table, run_id=manual__2026-02-15T18:41:29.791377+00:00, execution_date=20260215T184129, start_date=20260215T184134, end_date=20260215T184134
+[2026-02-15T18:41:34.984+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 82 for task core_table ('function' object is not subscriptable; 4210)
+[2026-02-15T18:41:34.997+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2026-02-15T18:41:35.025+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-15T18:41:35.030+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

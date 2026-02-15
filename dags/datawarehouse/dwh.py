@@ -7,11 +7,11 @@ import logging
 from airflow.decorators import task
 
 logger = logging.getLogger(__name__)
-table = "yt_api"
+table = 'yt_api'
 
 @task
 def staging_table():
-    schema=staging
+    schema = 'staging'
     conn, cur = None, None
     try:
         conn, cur = get_conn_cursor()
@@ -31,7 +31,7 @@ def staging_table():
                     insert_rows(cur,conn,schema,row)
         ids_in_json = {row['video_id'] for row in YT_data}
 
-        ids_to_delete = set(table_id) - ids_in_json
+        ids_to_delete = set(table_ids) - ids_in_json
         if ids_to_delete:
             delete_rows(cur,conn,schema,ids_to_delete)
         
@@ -58,14 +58,14 @@ def core_table():
         current_video_ids = set()
 
         cur.execute(f"SELECT * from staging.{table};")
-        row = cur.fetchall()
+        rows = cur.fetchall()
 
         for row in rows:
             current_video_ids.add(row["Video_ID"])
 
             if len(table_ids) == 0:
                 transformed_row = transform_data(row)
-                insert_rows(cur,conn,schema,transform_data)
+                insert_rows(cur,conn,schema,transformed_row)
 
             else:
                 transformed_row = transform_data(row)
@@ -73,7 +73,7 @@ def core_table():
                     update_rows(cur,conn,schema,transformed_row)
                 
                 else:
-                    insert_rows(cur,conn,schema,transformed_row))
+                    insert_rows(cur,conn,schema,transformed_row)
 
         ids_to_delete = set(table_ids) - current_video_ids
         if ids_to_delete:

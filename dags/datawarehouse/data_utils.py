@@ -1,5 +1,7 @@
-from airflow.providers.postgres.hooks.postgres import PostgreHook
-from pyscopg2.extras import RealDictCursor
+from airflow.providers.postgres.hooks.postgres import PostgresHook
+from psycopg2.extras import RealDictCursor
+
+table = "yt_api"
 
 def get_conn_cursor():
     hook = PostgresHook(postgres_conn_id="postgres_db_yt_elt",database="elt_db")
@@ -50,7 +52,7 @@ def create_table(schema):
     close_conn_cursor(conn,cur)
 
 def get_video_ids(cur, schema):
-    cur.execute(f"""select "Video_ID" from {schema.{table};""")
+    cur.execute(f"""select "Video_ID" from {schema}.{table};""")
     ids = cur.fetchall()
     video_ids = [row["Video_ID"] for row in ids]
     return video_ids
