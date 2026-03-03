@@ -1,0 +1,1 @@
+[2026-02-18T22:01:03.568+0000] {scheduler_job_runner.py:843} ERROR - Executor reports task instance <TaskInstance: data_quality.soda_test_staging scheduled__2026-02-17T16:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
