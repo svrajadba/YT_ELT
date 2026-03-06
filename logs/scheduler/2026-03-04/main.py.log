@@ -1,0 +1,27 @@
+[2026-03-04T17:06:17.462+0000] {processor.py:161} INFO - Started process (PID=2427) to work on /opt/airflow/dags/main.py
+[2026-03-04T17:06:17.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-03-04T17:06:17.467+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:17.466+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-03-04T17:06:17.578+0000] {processor.py:840} INFO - DAG(s) 'data_quality', 'produce_json', 'update_db' retrieved from /opt/airflow/dags/main.py
+[2026-03-04T17:06:18.178+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:18.178+0000] {dag.py:3096} INFO - Sync 3 DAGs
+[2026-03-04T17:06:18.738+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:18.738+0000] {dag.py:3954} INFO - Setting next_dagrun for data_quality to None, run_after=None
+[2026-03-04T17:06:19.520+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:19.519+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-04 14:00:00+00:00, run_after=2026-03-05 14:00:00+00:00
+[2026-03-04T17:06:19.605+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:19.605+0000] {dag.py:3954} INFO - Setting next_dagrun for update_db to None, run_after=None
+[2026-03-04T17:06:21.088+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 3.644 seconds
+[2026-03-04T17:06:51.384+0000] {processor.py:161} INFO - Started process (PID=2440) to work on /opt/airflow/dags/main.py
+[2026-03-04T17:06:51.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-03-04T17:06:51.398+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:51.397+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-03-04T17:06:51.569+0000] {processor.py:840} INFO - DAG(s) 'update_db', 'produce_json', 'data_quality' retrieved from /opt/airflow/dags/main.py
+[2026-03-04T17:06:51.718+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:51.714+0000] {dag.py:3096} INFO - Sync 3 DAGs
+[2026-03-04T17:06:51.829+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:51.828+0000] {dag.py:3954} INFO - Setting next_dagrun for data_quality to None, run_after=None
+[2026-03-04T17:06:51.888+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:51.886+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-04 14:00:00+00:00, run_after=2026-03-05 14:00:00+00:00
+[2026-03-04T17:06:51.900+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:06:51.900+0000] {dag.py:3954} INFO - Setting next_dagrun for update_db to None, run_after=None
+[2026-03-04T17:06:51.955+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.644 seconds
+[2026-03-04T17:07:22.990+0000] {processor.py:161} INFO - Started process (PID=2447) to work on /opt/airflow/dags/main.py
+[2026-03-04T17:07:22.995+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-03-04T17:07:22.997+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:07:22.996+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-03-04T17:07:23.239+0000] {processor.py:840} INFO - DAG(s) 'update_db', 'data_quality', 'produce_json' retrieved from /opt/airflow/dags/main.py
+[2026-03-04T17:07:23.488+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:07:23.487+0000] {dag.py:3096} INFO - Sync 3 DAGs
+[2026-03-04T17:07:23.654+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:07:23.653+0000] {dag.py:3954} INFO - Setting next_dagrun for data_quality to None, run_after=None
+[2026-03-04T17:07:23.752+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:07:23.751+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-03-04 14:00:00+00:00, run_after=2026-03-05 14:00:00+00:00
+[2026-03-04T17:07:23.765+0000] {logging_mixin.py:188} INFO - [2026-03-04T17:07:23.764+0000] {dag.py:3954} INFO - Setting next_dagrun for update_db to None, run_after=None
+[2026-03-04T17:07:23.871+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.963 seconds
